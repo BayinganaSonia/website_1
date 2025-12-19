@@ -6,3 +6,15 @@ html {
     font-size: 21px;
 
 }
+
+a {
+    color: lightgray;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover, a:active {
+    color: red;
+}
