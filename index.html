@@ -25,6 +25,9 @@
                 <li>
                      <a href="#solution">The Solution</a>
                 </li>
+                <li>
+                     <a href="#contact">Contact Me</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -175,7 +178,114 @@
                     </tr>
                 </tfoot>
             </table>
-        
+     
+    <hr>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or comments, feel free to reach out!</p>
+
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Contact Information</legend>
+            <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Jane" autocomplete="on" required autofocus>
+            </p>
+
+            <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Doe" autocomplete="on" required>
+            </p>
+
+            <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="jane.doe@example.com" autocomplete="on" required>
+            </p>
+
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </p>
+            <p>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+250 788 123 456" pattern="+250 [0-9]{3} [0-9]{3} [0-9]{3}" required>
+            </p>
+            <p>
+                <label for="decade">Select your favorite decade:</label>
+                <input type="number" id="decade" name="decade" min="1900" max="2023" step="10" value="2000">
+            </p>
+            <p>
+                <label for="coffee">Do you like coffee?</label>
+                <select id="coffee" name="coffee" multiple size="2">
+                    <optgroup label="Coffee Preference">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="sometimes">Sometimes</option>
+                    </optgroup>
+                    <optgroup label="Caffeine Sensitivity">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </optgroup>
+                </select>
+            </p>
+            <!--  <p>
+                <label for="coffee">Do you like coffee?</label>
+                <input id="coffee" name="coffee" list="coffeeOptions">
+                <datalist id="coffeeOptions">
+                        <option value="yes">
+                        <option value="no">
+                        <option value="sometimes">
+                </datalist>
+            </p>
+ -->
+            <input type="submit" value="Submit">
+            
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>What is your favorite coffee?</legend>
+            <p>
+                <input type="radio" id="espresso" name="favoriteCoffee" value="espresso" >
+                <label for="espresso">Espresso</label>
+            </p>
+            <p>
+                <input type="radio" id="latte" name="favoriteCoffee" value="latte" >
+                <label for="latte">Latte</label>
+            </p>
+            <p>
+                <input type="radio" id="cappuccino" name="favoriteCoffee" value="cappuccino" >
+                <label for="cappuccino">Cappuccino</label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Select your hobbies</legend>
+            <p>
+                <input type="checkbox" id="reading" name="hobby" value="reading" >
+                <label for="reading">Reading</label>
+            </p>
+            <p>
+                <input type="checkbox" id="traveling" name="hobby" value="traveling" >
+                <label for="traveling">Traveling</label>
+            </p>
+            <p>
+                <input type="checkbox" id="cooking" name="hobby" value="cooking" >
+                <label for="cooking">Cooking</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Send Me A Note</legend>
+            <label for="message">Your Message</label>
+            <br>
+            <textarea id="message" name="message" rows="5" cols="33" placeholder="Type your message here..."></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+
+    </form>
     </main>
     <hr>
     <footer>
